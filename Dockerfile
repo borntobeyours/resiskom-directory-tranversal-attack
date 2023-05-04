@@ -12,7 +12,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the Flask application and static files into the container
 COPY app.py .
-COPY static/ static/
 COPY ../flag.txt ../flag.txt
 
 # Expose the port the application will run on
